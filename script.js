@@ -1,6 +1,6 @@
 // ===== CONFIG — fill these in =====
 const CALENDAR_ID = "b5a6178e032dba7698b21034342abd4098f506ac046a30a0f56ad799a4a9c32f@group.calendar.google.com";
-const API_KEY = "AIzaSyBdQ0Quu2hc0GPYaDGQIb05K-tkwVYXx9s";
+const API_KEY = "AIzaSyDpt2-uTmsa3HarWf8NRL4eQdR-Q-gYmoo";
 const MAX_EVENTS = 5;
 const TIME_ZONE = Intl.DateTimeFormat().resolvedOptions().timeZone; // visitor's time zone
 // ==================================
