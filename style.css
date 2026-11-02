@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+}
+
+header {
+  background: #1a73e8;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.upcoming h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+#event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#event-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+#event-list li:last-child {
+  border-bottom: none;
+}
+
+.event-title {
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.event-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.event-title a:hover {
+  text-decoration: underline;
+}
+
+.event-time,
+.event-location {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.status {
+  color: #777;
+  font-style: italic;
+}
+
+.error {
+  color: #c62828;
+}
+
+.calendar iframe {
+  width: 100%;
+  height: 600px;
+  border: 0;
+}
+
+/* Stack on small screens */
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar iframe {
+    height: 450px;
+  }
+}

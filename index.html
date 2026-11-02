@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Calendar</h1>
+  </header>
+
+  <main>
+    <section class="upcoming">
+      <h2>Upcoming Events</h2>
+      <ul id="event-list">
+        <li class="status">Loading events…</li>
+      </ul>
+    </section>
+
+    <section class="calendar">
+      <iframe id="calendar-frame" title="Google Calendar" frameborder="0" scrolling="no"></iframe>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
